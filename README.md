@@ -1,46 +1,88 @@
-adicionando page
+# Lista de Tarefas (To-Do List)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação de lista de tarefas construída com React, Redux e TypeScript. A aplicação permite adicionar, remover e visualizar tarefas.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Redux**: Biblioteca para gerenciamento de estado.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Styled-components**: Biblioteca para estilização de componentes.
+- **React Router**: Biblioteca para roteamento em aplicações React.
+- **ESLint**: Ferramenta de linting para identificar e corrigir problemas no código.
+- **Prettier**: Ferramenta de formatação de código.
 
-### `npm start`
+## Estrutura do Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **src**
+  - **components**: Componentes reutilizáveis da aplicação.
+  - **containers**: Componentes que estão conectados ao Redux.
+  - **models**: Definições de tipos e interfaces.
+  - **pages**: Páginas da aplicação.
+  - **store**: Configuração do Redux e reducers.
+  - **styles**: Estilos globais e componentes estilizados.
+  - **utils**: Utilitários e funções auxiliares.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- **Adicionar Tarefa**: Permite adicionar uma nova tarefa à lista.
+- **Remover Tarefa**: Permite remover uma tarefa existente da lista.
+- **Visualizar Tarefas**: Exibe a lista de tarefas com detalhes como título, descrição, prioridade e status.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como Executar o Projeto
 
-### `npm run build`
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+   cd NOME_DO_REPOSITORIO
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Instale as dependências:
+   npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ Execute a aplicação:
+   npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   A aplicação estará disponível em http://localhost:3000.
 
-### `npm run eject`
+   src/
+  components/
+    Tarefa/
+      index.tsx
+      styles.ts
+  containers/
+    ListaDeTarefas/
+      index.tsx
+    BarraLateral/
+      index.tsx
+  models/
+    Tarefa.ts
+  pages/
+    Home/
+      index.tsx
+  store/
+    reducers/
+      tarefas.ts
+    index.ts
+  styles/
+    index.ts
+  utils/
+    enums/
+      tarefa.ts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+      Contribuição
+Se você quiser contribuir com este projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Adicionar o `README.md` ao Projeto
 
-## Learn More
+1. Crie um arquivo chamado `README.md` na raiz do seu projeto.
+2. Copie e cole o conteúdo acima no arquivo `README.md`.
+3. Adicione o arquivo ao Git, faça o commit e envie para o repositório remoto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git add README.md
+git commit -m "Add README.md"
+git push origin main
